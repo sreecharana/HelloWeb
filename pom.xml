@@ -5,12 +5,12 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   
-  <dependencies>
   
   
   
   
-  </dependencies>
+  
+
   
   
   
@@ -33,6 +33,16 @@
           <failOnMissingWebXml>false</failOnMissingWebXml>
         </configuration>
       </plugin>
+      <plugin> 
+    <groupId>org.apache.tomcat.maven</groupId>
+   <artifactId>tomcat7-maven-plugin</artifactId>
+    <version>2.2</version> 
+        <configuration>
+      <url>http://localhost:8090/manager/text</url>
+      <server>TomcatServer</server>
+        <path>C:\Users\sreec\Downloads\tomcat7\bin</path>
+  </configuration> 
+</plugin>
     </plugins>
   </build>
 </project>
